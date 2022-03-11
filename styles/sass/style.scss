@@ -24,7 +24,6 @@ a {
   margin-left: auto;
   height: 20px;
   width: auto;
-
 }
 
 #banner {
@@ -59,6 +58,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     border-radius: 50px;
+    box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.199);
     background: linear-gradient(
       0deg,
       rgba(147, 86, 220, 0.7935034802784222) 0%,
@@ -67,7 +67,28 @@ a {
     );
     color: white;
     margin-bottom: 50px;
+      &:hover {
+      filter: brightness(105%);
+      box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.507); 
+      transition: 0.5s ease-in-out;
+      
+      }
+      transition: 0.5s ease-in-out;
+      box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.199);
+
   }
+}
+
+.btn-commander{
+
+  &:hover {
+    filter: brightness(105%);
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.507); 
+    transition: 0.3s ease-in-out;
+    
+    }
+    transition: 0.3s ease-in-out;
+    box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.199);
 }
 
 #f-1,
@@ -87,6 +108,7 @@ a {
 
   &:hover {
     background-color: rgba(224, 217, 255, 0.562);
+    transition: 0.7s;
   }
 
   .numero {
@@ -135,31 +157,27 @@ header {
   h1 {
     height: 100%;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     margin: 0;
   }
 }
 
-.fa-solid.fa-arrow-left{
-
-    font-size: 30px;
-    position: relative;
-    top: 25px;
-    left: 20px;
-    &:hover{
-        animation: shake 0.5s ease-in-out;
-    }
-
-
+.fa-solid.fa-arrow-left {
+  font-size: 30px;
+  position: relative;
+  top: 25px;
+  left: 20px;
+  &:hover {
+    animation: shake 0.5s ease-in-out;
+  }
 }
 
-
-.label-design{
-    background-color: $tertiaire;
-    height: 3px;
-    width: 50px;
-   position: relative;
-   top: -15px;
+.label-design {
+  background-color: $tertiaire;
+  height: 3px;
+  width: 50px;
+  position: relative;
+  top: -15px;
 }
 
 #fonctionnement {
@@ -169,7 +187,7 @@ header {
   }
   .numero {
     font-weight: 600;
-    font-size: 25px;
+    font-size: 15px;
   }
 
   p {
@@ -219,22 +237,21 @@ footer {
   justify-content: space-around;
   background-color: rgb(61, 61, 61);
   padding-bottom: 25px;
-  padding-top: 25PX;
+  padding-top: 25px;
 
-  main{
-      padding: 0;
-    
-      margin: 0;
-      height: auto;;
-    }
+  main {
+    padding: 0;
+
+    margin: 0;
+    height: auto;
+  }
 
   h1 {
-  
     text-align: left;
     margin-left: 25px;
     margin-top: 30px;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 100;
   }
 
@@ -272,12 +289,8 @@ footer {
 .nom-restaurant {
   border-radius: 35px 35px 0 0;
   background-color: white;
-//   position: relative;
-//   z-index: 1;
-  
-  
- 
-
+  //   position: relative;
+  //   z-index: 1;
 
   background-color: rgb(243, 242, 242);
 }
@@ -289,8 +302,8 @@ footer {
   padding-top: 15px;
 
   h1 {
-    letter-spacing: 1px;
-    font-size: 35px;
+    letter-spacing: -1px;
+    font-size: 26px;
   }
 
   i {
@@ -299,26 +312,146 @@ footer {
   }
 }
 
+.fa-solid.fa-heart:hover {
+  background: #9356dc;
+  background: -webkit-repeating-linear-gradient(
+    to bottom right,
+    #ff79da 0%,
+    #9356dc 100%
+  );
+  background: -moz-repeating-linear-gradient(
+    to bottom right,
+    #ff79da 0%,
+    #9356dc 100%
+  );
+  background: repeating-linear-gradient(
+    to bottom right,
+    #ff79da 0%,
+    #9356dc 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: ease-in-out 0.3s;
+}
+
+.heart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fa-solid.fa-heart {
+
+  color: white;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
 .list-choix {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
-  a{
-      width: 100%;
-      height: 100%;
+  a {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+header {
+  animation: fadein 0.5s;
+}
+
+#ville {
+  animation: fadein 1s;
+}
+
+#banner {
+  animation: fadein 1.5s;
+}
+
+#fonctionnement > h2:nth-child(1) {
+  animation: fadein 2s;
+}
+
+#f-1 {
+  animation: fadein 2.5s;
+}
+
+#f-2 {
+  animation: fadein 3s;
+}
+
+#f-3 {
+  animation: fadein 3.5s;
+}
+
+#restaurants > h2:nth-child(1) {
+  animation: fadein 4s;
+}
+
+div.card:nth-child(1) {
+  animation: fadein 4.5s;
+}
+
+div.card:nth-child(2) {
+  animation: fadein 5s;
+}
+div.card:nth-child(3) {
+  animation: fadein 5.5s;
+}
+
+div.card:nth-child(4) {
+  animation: fadein 6s;
+}
+div.card:nth-child(5) {
+  animation: fadein 6.5s;
+}
+
+footer {
+  animation: fadein 7s;
+}
+
+.entrees > div:nth-child(3) > a:nth-child(1) > div:nth-child(1) {
+  animation: fadein 2s;
+}
+
+.entrees > div:nth-child(3) > a:nth-child(1) > div:nth-child(2) {
+  animation: fadein 3s;
+}
+
+.entrees > div:nth-child(3) > a:nth-child(1) > div:nth-child(3) {
+  animation: fadein 4s;
+}
+
+div.plats:nth-child(3) > div:nth-child(3) > a:nth-child(1) > div:nth-child(1) {
+  animation: fadein 5s;
+}
+
+div.plats:nth-child(3) > div:nth-child(3) > a:nth-child(1) > div:nth-child(2) {
+  animation: fadein 6s;
+}
+
+div.plats:nth-child(3) > div:nth-child(3) > a:nth-child(1) > div:nth-child(3) {
+  animation: fadein 7s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
 .card-choix {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.171);
+  animation: fadein 2s;
 
- 
   border-radius: 20px;
   background-color: white;
   height: 70px;
@@ -332,89 +465,72 @@ footer {
   margin-left: 15px;
 
   p {
-  
     margin: 0;
     margin-top: 5px;
   }
 }
 
-.nom-restaurant{
-padding-left: 25px;
-padding-right: 25px;
-
+.nom-restaurant {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
-.infos-choix > p:nth-child(2){
+.infos-choix > p:nth-child(2) {
+  padding-left: 15px;
 
-padding-left: 15px;
-
-margin-right:20px;
+  margin-right: 20px;
 }
 
 .nom-choix {
   h4 {
     margin: 0;
     margin-left: 15px;
- 
   }
   font-size: 15px;
 
   text-align: left;
   width: 100%;
-
 }
 
 .fa-solid.fa-circle-check {
-
-
   font-size: 40px;
   color: rgb(255, 255, 255);
 
-  margin:auto;
- 
+  margin: auto;
+
   text-align: center;
   width: 100%;
 }
 
 .anim-check {
-    padding-top: 15px;
+  padding-top: 15px;
   width: 0%;
   display: none;
   background-color: $tertiaire;
-    height: 55px;
+  height: 55px;
 
- 
- 
   border-radius: 0px 20px 20px 0px;
 }
 
 .card-choix:hover {
-
-    .infos-choix > p:nth-child(1){
-
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-      
-
-    }
-  
-    
+  .infos-choix > p:nth-child(1) {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 
   .nom-choix {
     animation: 0.3s check ease-in-out forwards;
-    h4{
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-
+    h4 {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
     }
   }
 
   .anim-check {
-    
     display: block;
- 
+
     animation: 0.3s check2 ease-in-out forwards;
     .fa-solid.fa-circle-check {
       animation: 0.7s rotatev ease-in-out forwards;
@@ -431,37 +547,34 @@ margin-right:20px;
 }
 
 @keyframes shake {
-    0% {
-        transform: rotate(0deg)
-    }
-    25%{
-        transform: rotate(20deg);
-    }
-    50%{
-        transform: rotate(10deg);
-    }
-    70%{
-        transform: rotate(20deg);
-
-    }
-    80%
-    {
-        transform: rotate(10deg);
-    }
-    100% {
-      transform: rotate(0deg)
-    }
+  0% {
+    transform: rotate(0deg);
+    transform: translateX(1px);
   }
-
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(10deg);
+    transform: translateX(-3px);
+  }
+  70% {
+    transform: rotate(20deg);
+  }
+  80% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    transform: translateX(0px);
+  }
+}
 
 @keyframes check2 {
   0% {
   }
   100% {
-      
     width: 100px;
-    
-  
   }
 }
 
@@ -476,40 +589,32 @@ margin-right:20px;
   }
 }
 
-.submit-commande{
-
-width: 100%;
-margin-left: auto;
-margin-right: auto;
-height: 100px;
-display: flex;
-justify-content: center;
-padding-bottom: 20PX;
-
-
+.submit-commande {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
-.btn-commander{
-    border-style: none;
-    font-size: 25px;
-    font-weight: 600;
-    height: 70px;
-    width: auto;
-    border-radius: 50px;
-    background: linear-gradient(
-      0deg,
-      rgba(147, 86, 220, 0.7935034802784222) 0%,
-      rgba(147, 86, 220, 0.728538283062645) 0%,
-      rgba(255, 121, 218, 1) 100%
-    );
-    color: white;
-    padding: 20px 70px 20px 70px;
-margin-top: 20px;
-margin-bottom: 20px;
-    &:hover{
-
-        transform: scale(1.05);
-        transition: 0.5s;
-    }
-
+.btn-commander {
+  border-style: none;
+  font-size: 25px;
+  font-weight: 600;
+  height: 70px;
+  width: auto;
+  border-radius: 50px;
+  background: linear-gradient(
+    0deg,
+    rgba(147, 86, 220, 0.7935034802784222) 0%,
+    rgba(147, 86, 220, 0.728538283062645) 0%,
+    rgba(255, 121, 218, 1) 100%
+  );
+  color: white;
+  padding: 20px 70px 20px 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ 
 }
