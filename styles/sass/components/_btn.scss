@@ -1,0 +1,60 @@
+.btn-commander {
+    border-style: none;
+    font-size: 25px;
+    font-weight: 600;
+    height: 70px;
+    width: auto;
+    border-radius: 50px;
+    background: linear-gradient(
+      0deg,
+      rgba(147, 86, 220, 0.7935034802784222) 0%,
+      rgba(147, 86, 220, 0.728538283062645) 0%,
+      rgba(255, 121, 218, 1) 100%
+    );
+    color: white;
+    padding: 20px 70px 20px 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &:hover {
+        filter: brightness(105%);
+        box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.507);
+        transition: 0.3s ease-in-out;
+      }
+      transition: 0.3s ease-in-out;
+      box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.199);
+   
+  }
+
+
+  
+
+  
+
+  #btn-banner {
+    border-style: none;
+    font-size: 25px;
+    font-weight: 500;
+    height: 50px;
+    width: auto;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.199);
+    background: linear-gradient(
+      0deg,
+      rgba(147, 86, 220, 0.7935034802784222) 0%,
+      rgba(147, 86, 220, 0.728538283062645) 0%,
+      rgba(255, 121, 218, 1) 100%
+    );
+    color: white;
+    margin-bottom: 50px;
+    &:hover {
+      filter: brightness(105%);
+      box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.507);
+      transition: 0.5s ease-in-out;
+    }
+    transition: 0.5s ease-in-out;
+    box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.199);
+  }
+  

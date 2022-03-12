@@ -1,0 +1,303 @@
+@import "../abstracts/_variables.scss";
+
+header {
+  animation: fadeinbanner  $time-transition-fadein * 1;
+}
+
+#ville {
+  animation: fadeinbanner  $time-transition-fadein * 2;
+}
+
+#banner {
+  animation: fadeinbanner  $time-transition-fadein * 3;
+}
+
+#fonctionnement > h2:nth-child(1) {
+  animation: fadein  $time-transition-fadein * 4;
+}
+
+#f-1 {
+  animation: fadein  $time-transition-fadein * 5;
+}
+
+#f-2 {
+  animation: fadein  $time-transition-fadein * 6;
+}
+
+#f-3 {
+  animation: fadein  $time-transition-fadein * 7;
+}
+
+#restaurants > h2:nth-child(1) {
+  animation: fadein  $time-transition-fadein * 8;
+}
+
+div.card:nth-child(1) {
+  animation: fadein  $time-transition-fadein * 9;
+}
+
+div.card:nth-child(2) {
+  animation: fadein  $time-transition-fadein * 10;
+}
+div.card:nth-child(3) {
+  animation: fadein  $time-transition-fadein * 11;
+}
+
+div.card:nth-child(4) {
+  animation: fadein  $time-transition-fadein * 12;
+}
+div.card:nth-child(5) {
+  animation: fadein  $time-transition-fadein * 13;
+}
+
+#footer-index {
+  animation: fadeinbanner  $time-transition-fadein * 14;
+}
+
+.banner{
+  animation: fadeinbanner $time-transition-fadein * 2;
+}
+
+.entete-menu{
+
+  animation: fadein $time-transition-fadein * 3;
+}
+
+.entrees > h3:nth-child(1)
+{
+  animation: fadein $time-transition-fadein * 4;
+
+}
+.entrees > div:nth-child(2){
+  animation: fadein $time-transition-fadein * 5;
+}
+
+
+.entrees > div:nth-child(3) > a:nth-child(1) > div:nth-child(1) {
+  animation: fadein $time-transition-fadein * 6;
+}
+
+.entrees > div:nth-child(3) > a:nth-child(2) > div:nth-child(1) {
+  animation: fadein $time-transition-fadein * 7;
+}
+
+.entrees > div:nth-child(3) > a:nth-child(3) > div:nth-child(1) {
+  animation: fadein $time-transition-fadein * 8;
+}
+
+
+div.plats:nth-child(3) > h3:nth-child(1){
+  animation: fadein $time-transition-fadein * 9;
+}
+
+div.plats:nth-child(3) > div:nth-child(2){
+
+
+  animation: fadein $time-transition-fadein * 10;
+}
+
+div.plats:nth-child(3) > div:nth-child(3) > a:nth-child(1) > div:nth-child(1) {
+  animation: fadein $time-transition-fadein * 11;
+}
+
+div.plats:nth-child(3) > div:nth-child(3) > a:nth-child(2) > div:nth-child(1) {
+  animation: fadein $time-transition-fadein * 12;
+}
+
+div.plats:nth-child(3) > div:nth-child(3) > a:nth-child(3) > div:nth-child(1) {
+  animation: fadein $time-transition-fadein * 13;
+}
+
+div.plats:nth-child(4) > h3:nth-child(1){
+
+  animation: fadein $time-transition-fadein * 14;
+}
+
+div.plats:nth-child(4) > h3:nth-child(2){
+
+  animation: fadein $time-transition-fadein * 15;
+}
+
+div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(1) > div:nth-child(1){
+
+  animation: fadein $time-transition-fadein * 16;
+}
+
+div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(2) > div:nth-child(1){
+
+  animation: fadein $time-transition-fadein * 17;
+}
+
+div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(3) > div:nth-child(1){
+  animation: fadein $time-transition-fadein * 18;
+  
+}
+
+.submit-commande{
+  animation: fadein $time-transition-fadein * 19;
+
+}
+
+.footer-affiche-resto{
+  animation: fadein $time-transition-fadein * 19;
+}
+
+
+.nom-choix {
+  animation: 0.3s check ease-in-out forwards;
+  h4 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.anim-check {
+  display: block;
+
+  animation: 0.3s check2 ease-in-out forwards;
+  .fa-solid.fa-circle-check {
+    animation: 0.7s rotatev ease-in-out forwards;
+  }
+}
+
+
+.fa-solid.fa-arrow-left {
+  font-size: 30px;
+  position: relative;
+  top: 25px;
+  left: 20px;
+  &:hover {
+    animation: shake 0.5s ease-in-out;
+  }
+}
+
+
+.card-choix {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.171);
+  animation: fadein 2s;
+
+  border-radius: 20px;
+  background-color: white;
+  height: 70px;
+}
+
+
+
+
+// ============== Keyframes ==============
+
+
+
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  25%{
+
+    opacity: 0;
+   
+  }
+
+  75%{
+    opacity: 0.9;
+    transform: translateY(0px);
+
+  }
+  100% {
+    opacity: 1;
+   
+  }
+}
+
+@keyframes fadeinbanner {
+  0% {
+    opacity: 0;
+   
+  }
+  25%{
+
+    opacity: 0;
+   
+  }
+
+  75%{
+    opacity: 0.9;
+   
+
+  }
+  100% {
+    opacity: 1;
+   
+  }
+}
+
+
+@keyframes check2 {
+  0% {
+  }
+  100% {
+    width: 100px;
+  }
+}
+
+@keyframes rotatev {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+
+.submit-commande {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+
+@keyframes check {
+  0% {
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+    transform: translateX(1px);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(10deg);
+    transform: translateX(-3px);
+  }
+  70% {
+    transform: rotate(20deg);
+  }
+  80% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    transform: translateX(0px);
+  }
+}
+
