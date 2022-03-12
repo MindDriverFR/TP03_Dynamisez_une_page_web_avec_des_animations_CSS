@@ -1,5 +1,7 @@
 @import "../abstracts/_variables.scss";
 
+
+
 header {
   animation: fadeinbanner  $time-transition-fadein * 1;
 }
@@ -143,50 +145,6 @@ div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(3) > div:nth-child(1){
 }
 
 
-.nom-choix {
-  animation: 0.3s check ease-in-out forwards;
-  h4 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-}
-
-.anim-check {
-  display: block;
-
-  animation: 0.3s check2 ease-in-out forwards;
-  .fa-solid.fa-circle-check {
-    animation: 0.7s rotatev ease-in-out forwards;
-  }
-}
-
-
-.fa-solid.fa-arrow-left {
-  font-size: 30px;
-  position: relative;
-  top: 25px;
-  left: 20px;
-  &:hover {
-    animation: shake 0.5s ease-in-out;
-  }
-}
-
-
-.card-choix {
-  margin-bottom: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.171);
-  animation: fadein 2s;
-
-  border-radius: 20px;
-  background-color: white;
-  height: 70px;
-}
-
-
 
 
 // ============== Keyframes ==============
@@ -258,15 +216,7 @@ div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(3) > div:nth-child(1){
   }
 }
 
-.submit-commande {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
-}
+
 
 
 @keyframes check {

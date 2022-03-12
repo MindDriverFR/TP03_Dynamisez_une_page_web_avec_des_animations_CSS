@@ -57,4 +57,12 @@
     transition: 0.5s ease-in-out;
     box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.199);
   }
-  
+  .submit-commande {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
