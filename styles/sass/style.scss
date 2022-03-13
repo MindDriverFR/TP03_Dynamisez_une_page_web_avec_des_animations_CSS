@@ -236,6 +236,7 @@ header {
   margin-left: auto;
   box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.171);
   margin-bottom: 50px;
+  
   p {
     margin: 0px 0px 0px 20px;
   }
@@ -558,6 +559,7 @@ footer {
   margin-right: auto;
   animation: fondu 3s ease-out forwards;
   margin-bottom: 500px;
+  transition: 0.5s ease-out;
   
 
 }
@@ -568,7 +570,7 @@ footer {
 opacity: 1;
   }
 
-  90%{
+  99%{
 opacity: 1;
 z-index: 3;
 
@@ -577,6 +579,7 @@ z-index: 3;
     opacity: 0;
    
     z-index: -3;
+    display: none;
 
   }
 
