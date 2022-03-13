@@ -2,6 +2,7 @@
 @import "abstracts/_variables.scss";
 @import "base/_reset.scss";
 @import "components/_animations.scss";
+@import "components/_responsive.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700&family=Roboto&family=Shrikhand&display=swap");
@@ -209,7 +210,7 @@ header {
 
 #fonctionnement {
   h2 {
-    margin-left: 20px;
+    margin-left: 6vw;
     font-weight: 800;
   }
   .numero {
@@ -238,6 +239,13 @@ header {
   h3 {
     margin: 10px 0px 5px 20px;
   }
+
+  &:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+
+  }
+  transition: 0.2s ease-in-out;
 }
 
 .img-card {
@@ -595,3 +603,5 @@ footer {
   margin-bottom: 20px;
  
 }
+
+@include responsive;
