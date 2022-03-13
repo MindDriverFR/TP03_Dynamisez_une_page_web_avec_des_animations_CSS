@@ -1,0 +1,21 @@
+{
+  "name": "tp03_dynamisez_une_page_web_avec_des_animations_css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+      "scripts": {
+        "sass": "sass styles/sass/style.scss:styles/style.css -w --style compressed",
+        "prefix": "postcss styles/style.css --use autoprefixer -d./public/css/prefixed/"
+      },
+      
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nono-Le-Robot/TP03_Dynamisez_une_page_web_avec_des_animations_CSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nono-Le-Robot/TP03_Dynamisez_une_page_web_avec_des_animations_CSS/issues"
+  },
+  "homepage": "https://github.com/Nono-Le-Robot/TP03_Dynamisez_une_page_web_avec_des_animations_CSS#readme"
+}

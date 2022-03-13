@@ -458,6 +458,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-left: 15px;
+  width: 100%;
 
   p {
     margin: 0;
@@ -484,7 +485,7 @@ footer {
   font-size: 15px;
 
   text-align: left;
-  width: 100%;
+width: 100%;
 }
 
 .fa-solid.fa-circle-check {
@@ -510,21 +511,32 @@ footer {
 
 
 .card-choix:hover {
-  .infos-choix > p:nth-child(1) {
+  .infos-choix > p:nth-child(2) {
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space:pre-wrap;
     overflow: hidden;
+    h4 {
+      text-overflow: ellipsis;
+      white-space: pre-wrap;
+      overflow: hidden;
+    }
+
+    p{
+      text-overflow: ellipsis;
+      white-space:pre-wrap;
+      overflow: hidden;
+
+    }
   }
 
 
 
 
   .nom-choix {
-    animation: 0.3s check ease-in-out forwards;
 
     h4 {
       text-overflow: ellipsis;
-      white-space: nowrap;
+      white-space: pre-wrap;
       overflow: hidden;
     }
   }
@@ -557,7 +569,7 @@ footer {
   letter-spacing: 100px;
   margin-left: auto;
   margin-right: auto;
-  animation: fondu 3s ease-out forwards;
+  animation: fondu 4s ease-out forwards;
   margin-bottom: 500px;
   transition: 0.5s ease-out;
   
@@ -630,7 +642,7 @@ text-shadow: 0px 0px 20px $secondaire;
 100%{
   transform: translateY(0px);
   text-shadow: 0px 0px 20px $tertiaire;
-  opacity: 0;
+  opacity: 1;
 
 }
 
