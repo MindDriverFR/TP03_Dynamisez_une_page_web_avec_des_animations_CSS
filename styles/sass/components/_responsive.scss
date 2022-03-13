@@ -1,11 +1,37 @@
 @mixin responsive{
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @media screen and (min-width: 840px) {
 
         .card{
             width: 350px;
             
         }
+        .banner {
+            
+            width: 101%;
+            height: 600px;
+            position: relative;
+            left: -5px;
+            object-fit: cover;
+          }
     
         .englobe-cards-restaurants{
             display: flex;
@@ -18,7 +44,6 @@
         #fonctionnement{
             display: flex;
             flex-direction: row;
-          
         }
         #f-1,
         #f-2,
@@ -56,4 +81,19 @@
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

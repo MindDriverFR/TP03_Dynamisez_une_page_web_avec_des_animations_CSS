@@ -18,6 +18,11 @@ header {
   animation: fadein  $time-transition-fadein * 4;
 }
 
+body > main > h2{
+
+  animation: fadein  $time-transition-fadein * 4.5;
+}
+
 #f-1 {
   animation: fadein  $time-transition-fadein * 5;
 }
@@ -97,6 +102,16 @@ div.plats:nth-child(3) > div:nth-child(2){
 
   animation: fadein $time-transition-fadein * 10;
 }
+body > main > div > div.englobe-card-menus > div:nth-child(2) > h3
+{
+
+  animation: fadein $time-transition-fadein * 7;
+}
+
+body > main > div > div.englobe-card-menus > div:nth-child(2) > div.label-design{
+
+  animation: fadein $time-transition-fadein * 7;
+}
 
 div.plats:nth-child(3) > div:nth-child(3) > a:nth-child(1) > div:nth-child(1) {
   animation: fadein $time-transition-fadein * 11;
@@ -143,6 +158,8 @@ div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(3) > div:nth-child(1){
 .footer-affiche-resto{
   animation: fadein $time-transition-fadein * 19;
 }
+
+
 
 
 
@@ -201,7 +218,7 @@ div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(3) > div:nth-child(1){
   0% {
   }
   100% {
-    width: 100px;
+    width: 50px;
   }
 }
 
@@ -223,7 +240,7 @@ div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(3) > div:nth-child(1){
   0% {
   }
   100% {
-    width: 75%;
+    width: auto;
   }
 }
 
