@@ -1,84 +1,77 @@
 @import "../utils/_variables.scss";
 
-
-
 header {
-  animation: fadeinbanner  $time-transition-fadein * 1;
+  animation: fadeinbanner $time-transition-fadein * 1;
 }
 
 #ville {
-  animation: fadeinbanner  $time-transition-fadein * 2;
-}
-
-#banner {
-  animation: fadeinbanner  $time-transition-fadein * 3;
-}
-
-#fonctionnement > h2:nth-child(1) {
-  animation: fadein  $time-transition-fadein * 4;
-}
-
-body > main > h2{
-
-  animation: fadein  $time-transition-fadein * 4.5;
-}
-
-#f-1 {
-  animation: fadein  $time-transition-fadein * 5;
-}
-
-#f-2 {
-  animation: fadein  $time-transition-fadein * 6;
-}
-
-#f-3 {
-  animation: fadein  $time-transition-fadein * 7;
-}
-
-#restaurants > h2:nth-child(1) {
-  animation: fadein  $time-transition-fadein * 8;
-}
-
-div.card:nth-child(1) {
-  animation: fadein  $time-transition-fadein * 9;
-}
-
-div.card:nth-child(2) {
-  animation: fadein  $time-transition-fadein * 10;
-}
-div.card:nth-child(3) {
-  animation: fadein  $time-transition-fadein * 11;
-}
-
-div.card:nth-child(4) {
-  animation: fadein  $time-transition-fadein * 12;
-}
-div.card:nth-child(5) {
-  animation: fadein  $time-transition-fadein * 13;
-}
-
-#footer-index {
-  animation: fadeinbanner  $time-transition-fadein * 14;
-}
-
-.banner{
   animation: fadeinbanner $time-transition-fadein * 2;
 }
 
-.entete-menu{
-
-  animation: fadein $time-transition-fadein * 3;
+#banner {
+  animation: fadeinbanner $time-transition-fadein * 3;
 }
 
-.entrees > h3:nth-child(1)
-{
+#fonctionnement > h2:nth-child(1) {
   animation: fadein $time-transition-fadein * 4;
-
 }
-.entrees > div:nth-child(2){
+
+body > main > h2 {
+  animation: fadein $time-transition-fadein * 4.5;
+}
+
+#f-1 {
   animation: fadein $time-transition-fadein * 5;
 }
 
+#f-2 {
+  animation: fadein $time-transition-fadein * 6;
+}
+
+#f-3 {
+  animation: fadein $time-transition-fadein * 7;
+}
+
+#restaurants > h2:nth-child(1) {
+  animation: fadein $time-transition-fadein * 8;
+}
+
+div.card:nth-child(1) {
+  animation: fadein $time-transition-fadein * 9;
+}
+
+div.card:nth-child(2) {
+  animation: fadein $time-transition-fadein * 10;
+}
+div.card:nth-child(3) {
+  animation: fadein $time-transition-fadein * 11;
+}
+
+div.card:nth-child(4) {
+  animation: fadein $time-transition-fadein * 12;
+}
+div.card:nth-child(5) {
+  animation: fadein $time-transition-fadein * 13;
+}
+
+#footer-index {
+  animation: fadeinbanner $time-transition-fadein * 14;
+}
+
+.banner {
+  animation: fadeinbanner $time-transition-fadein * 2;
+}
+
+.entete-menu {
+  animation: fadein $time-transition-fadein * 3;
+}
+
+.entrees > h3:nth-child(1) {
+  animation: fadein $time-transition-fadein * 4;
+}
+.entrees > div:nth-child(2) {
+  animation: fadein $time-transition-fadein * 5;
+}
 
 .entrees > div:nth-child(3) > a:nth-child(1) > div:nth-child(1) {
   animation: fadein $time-transition-fadein * 6;
@@ -92,24 +85,23 @@ div.card:nth-child(5) {
   animation: fadein $time-transition-fadein * 8;
 }
 
-
-div.plats:nth-child(3) > h3:nth-child(1){
+div.plats:nth-child(3) > h3:nth-child(1) {
   animation: fadein $time-transition-fadein * 9;
 }
 
-div.plats:nth-child(3) > div:nth-child(2){
-
-
+div.plats:nth-child(3) > div:nth-child(2) {
   animation: fadein $time-transition-fadein * 10;
 }
-body > main > div > div.englobe-card-menus > div:nth-child(2) > h3
-{
-
+body > main > div > div.englobe-card-menus > div:nth-child(2) > h3 {
   animation: fadein $time-transition-fadein * 7;
 }
 
-body > main > div > div.englobe-card-menus > div:nth-child(2) > div.label-design{
-
+body
+  > main
+  > div
+  > div.englobe-card-menus
+  > div:nth-child(2)
+  > div.label-design {
   animation: fadein $time-transition-fadein * 7;
 }
 
@@ -125,94 +117,69 @@ div.plats:nth-child(3) > div:nth-child(3) > a:nth-child(3) > div:nth-child(1) {
   animation: fadein $time-transition-fadein * 13;
 }
 
-div.plats:nth-child(4) > h3:nth-child(1){
-
+div.plats:nth-child(4) > h3:nth-child(1) {
   animation: fadein $time-transition-fadein * 14;
 }
 
-div.plats:nth-child(4) > h3:nth-child(2){
-
+div.plats:nth-child(4) > h3:nth-child(2) {
   animation: fadein $time-transition-fadein * 15;
 }
 
-div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(1) > div:nth-child(1){
-
+div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(1) > div:nth-child(1) {
   animation: fadein $time-transition-fadein * 16;
 }
 
-div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(2) > div:nth-child(1){
-
+div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(2) > div:nth-child(1) {
   animation: fadein $time-transition-fadein * 17;
 }
 
-div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(3) > div:nth-child(1){
+div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(3) > div:nth-child(1) {
   animation: fadein $time-transition-fadein * 18;
-  
 }
 
-.submit-commande{
-  animation: fadein $time-transition-fadein * 19;
-
-}
-
-.footer-affiche-resto{
+.submit-commande {
   animation: fadein $time-transition-fadein * 19;
 }
 
-
-
-
-
+.footer-affiche-resto {
+  animation: fadein $time-transition-fadein * 19;
+}
 
 // ============== Keyframes ==============
-
-
-
 
 @keyframes fadein {
   0% {
     opacity: 0;
     transform: translateY(15px);
   }
-  25%{
-
+  25% {
     opacity: 0;
-   
   }
 
-  75%{
+  75% {
     opacity: 0.9;
     transform: translateY(0px);
-
   }
   100% {
     opacity: 1;
-   
   }
 }
 
 @keyframes fadeinbanner {
   0% {
     opacity: 0;
-   
   }
-  25%{
-
+  25% {
     opacity: 0;
-   
   }
 
-  75%{
+  75% {
     opacity: 0.9;
-   
-
   }
   100% {
     opacity: 1;
-   
   }
 }
-
 
 @keyframes check2 {
   0% {
@@ -232,9 +199,6 @@ div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(3) > div:nth-child(1){
     transform: rotate(360deg);
   }
 }
-
-
-
 
 @keyframes check {
   0% {
@@ -267,4 +231,3 @@ div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(3) > div:nth-child(1){
     transform: translateX(0px);
   }
 }
-
