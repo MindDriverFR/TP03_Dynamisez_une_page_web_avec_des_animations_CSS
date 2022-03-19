@@ -84,6 +84,7 @@ a {
       filter: brightness(105%);
       box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.507); 
       transition: 0.5s ease-in-out;
+      cursor: pointer;
       
       }
       transition: 0.5s ease-in-out;
@@ -110,6 +111,7 @@ a {
     filter: brightness(105%);
     box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.507); 
     transition: 0.3s ease-in-out;
+    cursor: pointer;
     
     }
     transition: 0.3s ease-in-out;
@@ -120,7 +122,12 @@ a {
 
   background-color: rgba(224, 217, 255, 0.562);
 }
-
+#fonctionnement-h2{
+width: 100%;
+text-align: center;
+margin-top: 40px;
+margin-bottom: 40px;
+}
 
 #f-1,
 #f-2,
@@ -136,6 +143,10 @@ a {
   margin-right: auto;
   margin-bottom: 20px;
   border: 0.1px rgba(128, 128, 128, 0.021) solid;
+
+  &:hover{
+    cursor: pointer;
+  }
 
   .numero {
     position: relative;
@@ -261,9 +272,7 @@ header {
   height: 65%;
 }
 
-.body-card {
-  height: 35%;
-}
+
 
 .img-card-size {
   width: 100%;
