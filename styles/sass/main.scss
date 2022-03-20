@@ -117,10 +117,7 @@ a {
     box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.199);
 }
 
-#f-3{
 
-  background-color: rgba(224, 217, 255, 0.562);
-}
 #fonctionnement-h2{
 width: 100%;
 text-align: center;
@@ -145,6 +142,8 @@ margin-bottom: 40px;
 
   &:hover{
     cursor: pointer;
+    background-color: rgba(224, 217, 255, 0.562);
+    transition: 0.2s ease-in-out;
   }
 
   .numero {
@@ -521,37 +520,18 @@ width: 100%;
   border-radius: 0px 20px 20px 0px;
 }
 
+.wrap-text-ellips{
+  text-overflow: ellipsis;
+  white-space:nowrap;
+  overflow: hidden;
+
+}
 
 .card-choix:hover {
-  .infos-choix > p:nth-child(2) {
-    text-overflow: ellipsis;
-    white-space:pre-wrap;
-    overflow: hidden;
-    h4 {
-      text-overflow: ellipsis;
-      white-space: pre-wrap;
-      overflow: hidden;
-    }
-
-    p{
-      text-overflow: ellipsis;
-      white-space:pre-wrap;
-      overflow: hidden;
-
-    }
-  }
 
 
 
 
-  .nom-choix {
-
-    h4 {
-      text-overflow: ellipsis;
-      white-space: pre-wrap;
-      overflow: hidden;
-    }
-  }
 
   .anim-check {
     display: block;
