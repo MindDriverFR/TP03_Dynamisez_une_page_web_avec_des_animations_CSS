@@ -162,10 +162,8 @@
     width: auto;
     border-radius: 50px;
     background: linear-gradient(
-      0deg,
-      rgba(147, 86, 220, 0.7935034802784222) 0%,
-      rgba(147, 86, 220, 0.728538283062645) 0%,
-      rgba(255, 121, 218, 1) 100%
+      $primaire 0%,
+      $secondaire 100%
     );
     color: white;
     padding: 20px 70px 20px 70px;

@@ -68,10 +68,8 @@ a {
     border-radius: 50px;
     box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.199);
     background: linear-gradient(
-      0deg,
-      rgba(147, 86, 220, 0.7935034802784222) 0%,
-      rgba(147, 86, 220, 0.728538283062645) 0%,
-      rgba(255, 121, 218, 1) 100%
+      $primaire 0%,
+      $secondaire 100%
     );
     color: white;
       &:hover {
@@ -352,21 +350,21 @@ footer {
 
 .fa-solid.fa-heart:hover {
   -webkit-text-stroke: 0px rgba(255, 255, 255, 0);
-  background: #9356dc;
+  background: $primaire;
   background: -webkit-repeating-linear-gradient(
     to bottom right,
-    #ff79da 0%,
-    #9356dc 100%
+    $secondaire 0%,
+    $primaire 100%
   );
   background: -moz-repeating-linear-gradient(
     to bottom right,
-    #ff79da 0%,
-    #9356dc 100%
+    $secondaire 0%,
+    $primaire 100%
   );
   background: repeating-linear-gradient(
     to bottom right,
-    #ff79da 0%,
-    #9356dc 100%
+    $secondaire 0%,
+    $primaire 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
