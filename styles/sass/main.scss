@@ -420,12 +420,6 @@ footer {
   transition: ease-in-out 0.3s;
 }
 
-.fondu-out-loading{
-
-  opacity: 0;
-  transition: opacity 5s ease-out;
-}
-
 .heart {
   display: flex;
   align-items: center;
@@ -561,18 +555,13 @@ width: 100%;
   letter-spacing: 100px;
   margin-left: auto;
   margin-right: auto;
-  animation: fondu 4s ease-out forwards;
   margin-bottom: 500px;
   transition: 0.5s ease-out;
+  animation: loader-out $loader-time ease-out forwards;
   
 
 }
 
-.fondu-out {
-  opacity: 0;
-  transition: opacity 1s ease-out;
-  z-index: -999;
-}
 
 
 i.fa-solid.fa-burger{
@@ -586,7 +575,7 @@ left: 25px;
 i.fa-burger:nth-child(1){
   color: $primaire;
 
-  animation: bounce 2s ease-in-out infinite;
+  animation: bounce 2s ease-in-out infinite ;
   
 }
 
