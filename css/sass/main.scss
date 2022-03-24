@@ -2,7 +2,6 @@
 @import "utils/_variables.scss";
 @import "base/_reset.scss";
 @import "components/_animations.scss";
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700&family=Roboto&family=Shrikhand&display=swap");
 
@@ -35,13 +34,11 @@ a {
   background-color: rgb(248, 248, 248);
   display: flex;
   flex-direction: column;
-
   p,
   h2 {
     width: 80%;
     text-align: center;
   }
-
   h2 {
     font-weight: 900;
     font-size: 25px;
@@ -49,7 +46,6 @@ a {
     margin: 20px auto;
     margin-top: 40px;
   }
-
   p {
     width: 90%;
     font-weight: 200;
@@ -78,45 +74,37 @@ a {
       rgba(255, 121, 218, 1) 100%
     );
     color: white;
-
       &:hover {
       filter: brightness(105%);
       box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.507); 
       transition: 0.5s ease-in-out;
       cursor: pointer;
-      
       }
       transition: 0.5s ease-in-out;
       box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.199);
-
   }
 }
 
 #fonctionnement h2{
-
   font-size: 30px
 }
 
 #restaurants{
-
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: rgb(248, 247, 247);
 }
 
 .btn-commander{
-
   &:hover {
     filter: brightness(105%);
     box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.507); 
     transition: 0.3s ease-in-out;
     cursor: pointer;
-    
     }
     transition: 0.3s ease-in-out;
     box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.199);
 }
-
 
 #fonctionnement-h2{
 width: 100%;
@@ -139,13 +127,11 @@ margin-bottom: 40px;
   margin-right: auto;
   margin-bottom: 20px;
   border: 0.1px rgba(128, 128, 128, 0.021) solid;
-
   &:hover{
     cursor: pointer;
     background-color: rgba(224, 217, 255, 0.562);
     transition: 0.2s ease-in-out;
   }
-
   .numero {
     position: relative;
     left: -20px;
@@ -156,12 +142,10 @@ margin-bottom: 40px;
     background-color: $primaire;
     border-radius: 70%;
   }
-
   i {
     color: gray;
     margin-right: 20px;
   }
-
   .fa-solid.fa-shop {
     color: $primaire;
   }
@@ -178,7 +162,6 @@ margin-bottom: 40px;
   align-items: center;
   justify-content: center;
   background-color: rgb(228, 226, 226);
-
   p {
     margin-left: 15px;
   }
@@ -186,11 +169,8 @@ margin-bottom: 40px;
 
 header {
   display: flex;
-  
   justify-content: center;
   align-items: center;
-  
-
   position: fixed;
   top: 0;
   width: 100%;
@@ -198,17 +178,15 @@ header {
   z-index: 3;
   background-color: white;
   h1 {
-  
     height: 100%;
     text-align: center;
     font-size: 35px;
-   padding-top: 45px;
+    padding-top: 45px;
   }
 }
 
 .fa-solid.fa-arrow-left {
   font-size: 30px;
-
   position: absolute;
   top: 25px;
   left: 25px;
@@ -234,7 +212,6 @@ header {
     font-weight: 600;
     font-size: 15px;
   }
-
   p {
     font-weight: 600;
   }
@@ -249,19 +226,15 @@ header {
   margin-left: auto;
   box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.171);
   margin-bottom: 50px;
-  
   p {
     margin: 0px 0px 0px 20px;
   }
-
   h3 {
     margin: 10px 0px 5px 20px;
   }
-
   &:hover{
     transform: scale(1.01);
     transition: 0.3s;
-
   }
   transition: 0.2s ease-in-out;
 }
@@ -280,17 +253,13 @@ header {
 }
 
 .new{
-
     color: rgb(63, 148, 122);
     width: 100px;
     background-color: rgb(131, 236, 201);
     text-align: center;
- 
     height: 27px;
     padding-top: 10px;
     border-radius: 2px;
-  
-
 }
 
 .new-box{
@@ -301,11 +270,9 @@ header {
   padding-top: 15px;
   padding-right: 20px;
   // top: 75px;
- 
 }
 
 div.img-card:nth-child(2) > img:nth-child(1), div.heart:nth-child(3){
-
   position: relative;
   top: -60px;
 }
@@ -319,16 +286,11 @@ footer {
   justify-content: space-around;
   background-color: rgb(61, 61, 61);
   padding-bottom: 25px;
-
- 
-
   main {
     padding: 0;
-
     margin: 0;
     height: auto;
   }
-
   h1 {
     text-align: left;
     margin-left: 25px;
@@ -337,18 +299,17 @@ footer {
     font-size: 18px;
     font-weight: 100;
   }
-
   a {
     text-decoration: none;
     color: white;
     text-align: start;
   }
-
   i {
     color: white;
     margin-right: 10px;
   }
 }
+
 .fa-solid.fa-handshake-angle {
   margin-right: 3.5px;
 }
@@ -358,7 +319,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
   height: 80%;
 }
 
@@ -372,9 +332,6 @@ footer {
 .nom-restaurant {
   border-radius: 35px 35px 0 0;
   background-color: white;
-  //   position: relative;
-  //   z-index: 1;
-
   background-color: rgb(243, 242, 242);
 }
 
@@ -383,12 +340,10 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding-top: 15px;
-
   h1 {
     letter-spacing: -1px;
     font-size: 26px;
   }
-
   i {
     font-size: 30px;
     margin-right: 25px;
@@ -425,8 +380,8 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
-.fa-solid.fa-heart {
 
+.fa-solid.fa-heart {
   color: white;
   -webkit-text-stroke: 1px #000000;
 }
@@ -436,7 +391,6 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
   a {
     width: 100%;
     height: 100%;
@@ -452,19 +406,16 @@ footer {
   align-items: center;
   box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.171);
   animation: fadein 2s;
-
   border-radius: 20px;
   background-color: white;
   height: 70px;
 }
 
 .infos-choix {
-
   display: flex;
   justify-content: space-between;
   margin-left: 15px;
   width: 100%;
-
   p {
     margin: 0;
     margin-top: 5px;
@@ -478,7 +429,6 @@ footer {
 
 .infos-choix > p:nth-child(2) {
   padding-left: 15px;
-
   margin-right: 20px;
 }
 
@@ -488,7 +438,6 @@ footer {
     margin-left: 15px;
   }
   font-size: 15px;
-
   text-align: left;
 width: 100%;
 }
@@ -496,21 +445,17 @@ width: 100%;
 .fa-solid.fa-circle-check {
   font-size: 40px;
   color: rgb(255, 255, 255);
-
   margin: auto;
-
   text-align: center;
   width: 100%;
 }
 
 .anim-check {
-
   padding-top: 15px;
   width: 0%;
   display: none;
   background-color: $tertiaire;
   height: 55px;
-
   border-radius: 0px 20px 20px 0px;
 }
 
@@ -518,19 +463,11 @@ width: 100%;
   text-overflow: ellipsis;
   white-space:nowrap;
   overflow: hidden;
-
 }
 
 .card-choix:hover {
-
-
-
-
-
   .anim-check {
     display: block;
-  
-
     animation: 0.3s check2 ease-in-out forwards;
     .fa-solid.fa-circle-check {
       animation: 0.7s rotatev ease-in-out forwards;
@@ -542,7 +479,6 @@ width: 100%;
 
 
 .loader{
-
   position: fixed;
   width: 100%;
   height: 100%;
@@ -558,8 +494,6 @@ width: 100%;
   margin-bottom: 500px;
   transition: 0.5s ease-out;
   animation: loader-out $loader-time ease-out forwards;
-  
-
 }
 
 
@@ -569,30 +503,22 @@ display: flex;
 position: relative;
 left: 25px;
  justify-content: center;
-
 }
 
 i.fa-burger:nth-child(1){
   color: $primaire;
-
   animation: bounce 2s ease-in-out infinite ;
-  
 }
 
 i.fa-burger:nth-child(2){
   color: $secondaire;
-
   animation: bounce 2s ease-in-out infinite;
 }
 
 i.fa-burger:nth-child(3){
   color: $tertiaire;
-
-   animation: bounce 2s ease-in-out infinite;
+  animation: bounce 2s ease-in-out infinite;
 }
-
-
 
 @include keyframes;
 @include responsive;
-
