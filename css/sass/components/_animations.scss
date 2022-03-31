@@ -146,7 +146,6 @@ div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(3) > div:nth-child(1) {
 }
 
 // ============== Keyframes ==============
-
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -163,6 +162,15 @@ div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(3) > div:nth-child(1) {
     opacity: 1;
   }
 }
+
+@keyframes fadeinheart{
+  from{
+  opacity: 0;
+  }
+  to{
+  opacity: 1;
+  }
+  }
 
 @keyframes fadeinbanner {
   0% {
@@ -228,4 +236,47 @@ div.plats:nth-child(4) > div:nth-child(3) > a:nth-child(3) > div:nth-child(1) {
     transform: rotate(0deg);
     transform: translateX(0px);
   }
+}
+
+
+@keyframes loaderspinner{
+  0%{
+      transform: rotate(0deg);
+      border-bottom: 10px rgb(178, 109, 218) solid ;
+  }
+  50%{
+      
+  border-bottom: 10px rgb(249, 154, 242) solid ;
+  }
+  99%{
+    opacity: 1;
+    z-index: 999;
+  }
+  100%{
+      transform: rotate(360deg);
+      border-bottom: 10px rgb(178, 109, 218) solid ;
+      opacity: 0;
+      z-index: -999;
+  }
+  
+
+
+
+
+}
+
+@keyframes out {
+  0%{
+ opacity: 1;
+ z-index: 999;
+  }
+  90%{
+opacity: 1;
+z-index: 999;
+  }
+  100%{
+opacity: 0;
+z-index: -999;
+  }
+  
 }

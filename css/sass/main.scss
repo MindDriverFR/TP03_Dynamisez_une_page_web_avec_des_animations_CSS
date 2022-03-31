@@ -14,7 +14,7 @@ h1 {
 }
 
 .fa-solid.fa-heart{
-  margin-right: 25px; padding-top: 25px; font-size: 25px;
+  margin-right: 25px; margin-top: 25px; font-size: 25px;
 }
 
 a {
@@ -241,7 +241,9 @@ header {
   height: 65%;
 }
 
-
+.img-card-new{
+  height: 65%;
+}
 
 .img-card-size {
   width: 100%;
@@ -270,9 +272,19 @@ header {
   // top: 75px;
 }
 
-div.img-card:nth-child(2) > img:nth-child(1), div.heart:nth-child(3){
+.img-card-new{
   position: relative;
-  top: -60px;
+  top: -52px;
+}
+
+#restaurants > div > a:nth-child(2) > div > div.heart{
+  position: relative;
+  top: -52px;
+}
+
+#restaurants > div > a:nth-child(1) > div > div.heart{
+  position: relative;
+  top: -52px;
 }
 
 footer {
@@ -348,31 +360,6 @@ footer {
   }
 }
 
-.fa-solid.fa-heart:hover {
-  -webkit-text-stroke: 0px rgba(255, 255, 255, 0);
-  background: $primaire;
-  background: -webkit-repeating-linear-gradient(
-    to bottom right,
-    $secondaire 0%,
-    $primaire 100%
-  );
-  background: -moz-repeating-linear-gradient(
-    to bottom right,
-    $secondaire 0%,
-    $primaire 100%
-  );
-  background: repeating-linear-gradient(
-    to bottom right,
-    $secondaire 0%,
-    $primaire 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transform: scale(1.005);
-  transition: ease-in-out 0.3s;
-}
-
 .heart {
   display: flex;
   align-items: center;
@@ -382,6 +369,36 @@ footer {
 .fa-solid.fa-heart {
   color: white;
   -webkit-text-stroke: 1px #000000;
+  &:hover{
+    
+    -webkit-text-stroke: 0px rgba(255, 255, 255, 0);
+    background: $primaire;
+    background: -webkit-repeating-linear-gradient(
+      0deg,
+      $secondaire 0%,
+      $primaire 100%
+      );
+      background: -moz-repeating-linear-gradient(
+        0deg,
+        $secondaire 0%,
+    $primaire 100%
+    );
+    background: repeating-linear-gradient(
+      0deg,
+      $secondaire 0%,
+      $primaire 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      cursor: pointer;
+      transform: scale(1.1);
+      animation: fadeinheart 0.5s ease-in;
+      
+      
+      
+      
+    }
 }
 
 .list-choix {
@@ -395,8 +412,6 @@ footer {
   }
 }
 
-
-
 .card-choix {
   margin-bottom: 25px;
   display: flex;
@@ -407,7 +422,9 @@ footer {
   border-radius: 20px;
   background-color: white;
   height: 70px;
+ 
 }
+
 
 .infos-choix {
   display: flex;
@@ -465,14 +482,15 @@ width: 100%;
 
 .card-choix:hover {
   .anim-check {
+
     display: block;
     animation: 0.3s check2 ease-in-out forwards;
     .fa-solid.fa-circle-check {
+
       animation: 0.7s rotatev ease-in-out forwards;
     }
   }
 }
-
 
 
 
@@ -493,8 +511,6 @@ width: 100%;
   transition: 0.5s ease-out;
   animation: loader-out $loader-time ease-out forwards;
 }
-
-
 
 i.fa-solid.fa-burger{
 display: flex;
@@ -517,6 +533,34 @@ i.fa-burger:nth-child(3){
   color: $tertiaire;
   animation: bounce 2s ease-in-out infinite;
 }
+
+#loader2{
+  padding: 50px;
+  width: 50px;
+  height: 50px;
+  border-bottom: 10px rgb(178, 109, 218) solid ;
+  border-radius: 100px;
+  animation: loaderspinner 2s linear;
+  background-color: rgba(252, 140, 228, 0)
+
+}
+
+#backloader{
+background-color: rgba(0, 0, 0, 0.827);
+width: 100%;
+height: 100%;
+position: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+animation: out 2s ease-out forwards;
+z-index: 999
+
+
+}
+
+
+
 
 @include keyframes;
 @include responsive;
