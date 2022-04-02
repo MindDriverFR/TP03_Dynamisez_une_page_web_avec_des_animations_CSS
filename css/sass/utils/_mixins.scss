@@ -66,7 +66,6 @@
 @mixin keyframes {
   @keyframes bounce {
     0% {
-      opacity: 1;
       transform: translateY(0px);
       text-shadow: 0px 0px 20px $primaire;
     }
@@ -77,7 +76,6 @@
     100% {
       transform: translateY(0px);
       text-shadow: 0px 0px 20px $tertiaire;
-      opacity: 1;
     }
   }
 
